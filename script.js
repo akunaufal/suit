@@ -9,7 +9,7 @@ while (ulang) {
 		alert('coba main dulu sekali');
 	} else {
 	//computer
-	const compRandom = Math.random();
+	const compRandom = Math.floor((Math.random() * 9) + 1);
 	let comp = '';
 
 	//others variable
@@ -19,14 +19,14 @@ while (ulang) {
 	//Scoring
 
 	//random
-	if(compRandom < 0.33) {
+	if(compRandom <= 3) {
 		comp = 'orang';
-	} else if(compRandom < 0.66) {
+	} else if(compRandom <= 6) {
 		comp = 'semut';
 	} else {
 		comp = 'gajah';
 	}
-	console.log(comp);
+	console.log('random number = ' + compRandom);
 	//rules
 	if(comp == player) {
 		hasil = 'KALIAN SERI!!!';
