@@ -19,13 +19,14 @@ while (ulang) {
 	//Scoring
 
 	//random
-	if(comp < 0.33) {
+	if(compRandom < 0.33) {
 		comp = 'orang';
-	} else if(comp < 0.66) {
+	} else if(compRandom < 0.66) {
 		comp = 'semut';
 	} else {
 		comp = 'gajah';
 	}
+	console.log(comp);
 	//rules
 	if(comp == player) {
 		hasil = 'KALIAN SERI!!!';
